@@ -42,6 +42,10 @@ function App() {
     </form>
   );
 
+  let source = (
+    <a href="https://github.com/maggiegmcd/cool-weather-zone">Open-Source Code</a>
+  )
+
   if (load === true) {
     return (
       <div className="Search">
@@ -54,6 +58,7 @@ function App() {
           <li>Humidity: {weather.humidity}%</li>
         </ul>
         {form}
+        {source}
       </div>
     );
   } else {
@@ -61,6 +66,7 @@ function App() {
       <div className="Search">
         <h1>Cool Weather Zone</h1>
         {form}
+        {source}
       </div>
     );
   }
